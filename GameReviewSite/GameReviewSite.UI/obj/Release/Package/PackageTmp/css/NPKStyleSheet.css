@@ -1,0 +1,343 @@
+﻿body{
+    background-color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.noMarg{
+    margin-left: 0;
+    margin-right: 0;
+}
+/*new styles*/
+.main-container{
+    padding-right: 0;
+    padding-left: 0;
+}
+.jumbotron-img-box img{
+    width: 100%;
+}
+.jumbotron-stats-box{
+    text-align: center;
+    padding: 6% 0 0 0;
+}
+.jumbotron-stats-box span{
+    display: block;
+    color: #fff;
+    font-size: 32px;
+}
+.mainJumbo .jumbotron-img-box{
+    padding-left: 0;
+    padding-right: 0;
+}
+.big-name-critics a,
+.my-critics a{
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.big-name-critics a:hover,
+.my-critics a:hover{
+    color: #fff;
+    background: #663333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.my-critics{
+    padding-top: 5px;
+}
+.panel{
+    width: 90%;
+}
+.panel-collapse{
+    border: solid 1px rgba(0,0,0,0.8);
+    padding: 2%;
+    max-height: 500px;
+    overflow: scroll;
+}
+.main-content-section .panel .panel-heading{
+    background-image: none;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
+@media(max-width: 1300px) and (min-width: 992px){
+    .jumbotron-stats-box{
+        padding: 2% 0 0 0;
+    }
+}
+@media(max-width: 1280px) and (min-width: 1100px){
+    .jumbotron-stats-box{
+    }
+}
+@media(max-width: 1090px){
+    .main-container .btnRegister,
+    .main-container .btnAccount{
+       margin-right: 0px; 
+    }
+}
+
+@media(max-width: 1028px){
+    .main-container .custom-button{
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+@media(max-width: 991px){
+    .main-content-section .SideBar{
+        width: 75%;
+        text-align: right;
+        margin: 0 auto 20px auto;
+        color: #fff;
+    }
+    .main-content-section .SideBarInner{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-align: right;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .big-name-critics,
+    .my-critics{
+        width: 40%;
+    }
+}
+@media(max-width: 991px){
+    .jumbotron-stats-box{
+        padding: 19px 0;
+    }
+}
+@media(max-width: 767px){
+    .main-container .custom-button,
+    .main-container .searchBtnsLeft{
+        margin-top: 15px;
+    }
+    .main-content-section .SideBar{
+        width: 100%;
+        text-align: right;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .main-content-section .SideBarInner{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-align: right;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .main-container .custom-button{
+        width: 33%;
+        padding-right: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .log-btns{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+/*old styles*/
+.mainJumbo {
+  /*background: url("../images/LogoSmall.png") no-repeat center center;*/
+  padding-top: 0;
+  background: #663333;
+  background: linear-gradient(to right, #663333, #000, #663333);
+  padding-bottom: 0;
+}
+.gameBoxContainer{
+    display: flex;
+    width: 55%;
+    float: left;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.gameBox {
+    height: 195px;
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 25px;
+    transition: .3s ease;
+}
+.gameBox-item-outer{
+    width: 195px;
+    height: 195px;
+    overflow:hidden;
+    margin-bottom: 15px;
+    border: solid 2px #663333;
+}
+.gameBox:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+.doomJumbo{
+  background: url("../images/doomHeader.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.searchBar{
+    width: 50%;
+}
+
+.search-bar-container{
+    background: rgba(0,0,0,0.8);
+}
+.search-bar-container .form-control-feedback{
+    left: 43%;
+}
+.search-bar-container .form-group{
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+.search-bar-container input{
+    height: 50px;
+}
+.search-bar-container .search-btns-right{
+    margin-top: 67px;
+}
+.search-bar{
+    width: 79%;
+}
+.search-btn{
+    width: 19%;
+    background-color: #663333;
+    color: #fff;
+    padding: 0px;
+}
+.search-btn:hover{
+    background-color: #000;
+}
+.searchBtnsLeft{
+    margin-top: 65px;
+    margin-bottom: 1.5px;
+}
+.collapseBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #eee;
+    float: left;
+    clear: both;
+}
+.SideBar{
+    width: 250px;
+    text-align: right;
+    background-color: rgba(0,0,0,0.8);
+    border-left: solid 2px;
+    border-right: solid 2px;
+    color: #fff;
+    margin: 0 auto 20px auto;
+}
+.SideBar a{
+    color: #fff;
+}
+.SideBarInner{
+    width: 80%;
+    text-align: right;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.SideBar h3{
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+.custom-button{
+    background-color: transparent;
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+    margin-top: 65px;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+}
+.log-btns{
+    text-align: right;
+}
+.custom-button:hover{
+    background-color: #663333;
+    color: #fff;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.form-control-feedback{
+    pointer-events: visible;
+}
+.footer {
+    background-color: #663333;
+    color: #fff;
+}
+.box1{
+    background: url("/images/DoomThumbnailSmall.jpg");
+}
+.box2{
+    background: url("/images/RocketLeague.png");
+}
+.box3{
+    background: url("/images/CivVI.png");
+}
+.box4{
+    background: url("/images/OverWatch.png");
+}
+.box5{
+    background: url("/images/CODR.png");
+}
+.box6{
+    background: url("/images/Skyrim.png");
+}
+.box7{
+    background: url("/images/Gears4.png");
+}
+.box8{
+    background: url("/images/TitanFall2.png");
+}
+.box9{
+    background: url("/images/NBA2K17.png");
+}
+.box10{
+    background: url("/images/Fifa17.png");
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+.mainJumbo video{
+    width: 100%;
+    height: auto;
+}
+.video-container{
+    padding: 0;
+}
+.mainJumbo iframe{
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    height: 700px;
+}
+.hide-radio{
+    position: absolute !important;
+    right: -15px !important;
+}
+.grow{
+    height: 225px;
+    transition: 0.7s ease-in-out;
+}

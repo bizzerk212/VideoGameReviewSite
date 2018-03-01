@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>GameReviewSite.UI</Name>
+    <ProjectGuid>3e14159e-22e1-43aa-8843-3bf80f86aad4</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>.</OutputPath>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{73520F3B-57D4-4D7D-8280-D81F0A3C992B};{349C5851-65DF-11DA-9384-00065B846F21};{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SpecificPageValue>index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Account\Home.php" />
+    <Compile Include="Admin\BlockedCritics\BLTest.php" />
+    <Compile Include="Admin\BlockedCritics\Add.php" />
+    <Compile Include="Admin\BlockedCritics\Delete.php" />
+    <Compile Include="Admin\BlockedCritics\index.php" />
+    <Compile Include="Admin\BlockedCritics\Update.php" />
+    <Compile Include="Admin\CriticsMembersRatings\Delete.php" />
+    <Compile Include="Admin\CriticsMembersRatings\index.php" />
+    <Compile Include="Admin\Critic\Delete.php" />
+    <Compile Include="Admin\Critic\index.php" />
+    <Compile Include="Admin\GamesMembers\Delete.php" />
+    <Compile Include="Admin\GamesMembers\index.php" />
+    <Compile Include="Admin\Genre\Add.php" />
+    <Compile Include="Admin\Genre\index.php" />
+    <Compile Include="Admin\Genre\Update.php" />
+    <Compile Include="Admin\Member\BLTest.php" />
+    <Compile Include="Admin\Review\Delete.php" />
+    <Compile Include="Admin\Review\index.php" />
+    <Compile Include="Admin\Review\Update.php" />
+    <Compile Include="Admin\CriticsMembersRatings\BLTest.php" />
+    <Compile Include="Admin\CriticsMembersRatings\Add.php" />
+    <Compile Include="Admin\CriticsMembersRatings\Update.php" />
+    <Compile Include="Admin\Critic\BLTest.php" />
+    <Compile Include="Admin\Critic\Add.php" />
+    <Compile Include="Admin\Critic\Update.php" />
+    <Compile Include="Admin\GamesMembers\BLTest.php" />
+    <Compile Include="Admin\GamesMembers\Add.php" />
+    <Compile Include="Admin\GamesMembers\Update.php" />
+    <Compile Include="Admin\Member\Add.php" />
+    <Compile Include="Admin\Member\Update.php" />
+    <Compile Include="Admin\Review\BLTest.php" />
+    <Compile Include="Admin\Review\Add.php" />
+    <Compile Include="Admin\VideoGame\BLTest.php" />
+    <Compile Include="Admin\VideoGame\Add.php" />
+    <Compile Include="Admin\VideoGame\Delete.php" />
+    <Compile Include="Admin\VideoGame\index.php" />
+    <Compile Include="Admin\VideoGame\Update.php" />
+    <Compile Include="Classes\CBlockedCritics.php" />
+    <Compile Include="Classes\CCritic.php" />
+    <Compile Include="Classes\CCriticsMembersRatingsJunction.php" />
+    <Compile Include="Classes\CGamesMembersJunction.php" />
+    <Compile Include="Classes\CGenre.php" />
+    <Compile Include="Classes\CMember.php" />
+    <Compile Include="Classes\CReview.php" />
+    <Compile Include="Classes\CVideoGame.php" />
+    <Compile Include="CreateAccount\access-controlled.php" />
+    <Compile Include="CreateAccount\change-pwd.php" />
+    <Compile Include="CreateAccount\ChangeAvatar.php" />
+    <Compile Include="CreateAccount\confirmreg.php" />
+    <Compile Include="CreateAccount\include\class.phpmailer.php" />
+    <Compile Include="CreateAccount\include\fg_membersite.php" />
+    <Compile Include="CreateAccount\include\formvalidator.php" />
+    <Compile Include="CreateAccount\include\membersite_config.php" />
+    <Compile Include="CreateAccount\login-home.php" />
+    <Compile Include="CreateAccount\login.php" />
+    <Compile Include="CreateAccount\logout.php" />
+    <Compile Include="CreateAccount\MyAccount2.php" />
+    <Compile Include="CreateAccount\register.php" />
+    <Compile Include="CreateAccount\reset-pwd-req.php" />
+    <Compile Include="CreateAccount\resetpwd.php" />
+    <Compile Include="CreateAccount\UpdateAvatar.php" />
+    <Compile Include="dbcon.php" />
+    <Compile Include="Game.php" />
+    <Compile Include="gameList.php" />
+    <Compile Include="index.php" />
+    <Compile Include="Results.php" />
+    <Compile Include="WebCrawler.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Member\" />
+    <Folder Include="Admin\Critic\" />
+    <Folder Include="Admin\BlockedCritics\" />
+    <Folder Include="Admin\CriticsMembersRatings\" />
+    <Folder Include="Admin\GamesMembers\" />
+    <Folder Include="Admin\Genre\" />
+    <Folder Include="Admin\VideoGame\" />
+    <Folder Include="Admin\Review\" />
+    <Folder Include="bin\" />
+    <Folder Include="bin\roslyn\" />
+    <Folder Include="CreateAccount\" />
+    <Folder Include="CreateAccount\include\" />
+    <Folder Include="CreateAccount\style\" />
+    <Folder Include="CreateAccount\scripts\" />
+    <Folder Include="css\" />
+    <Folder Include="dist\" />
+    <Folder Include="dist\css\" />
+    <Folder Include="dist\js\" />
+    <Folder Include="docs\" />
+    <Folder Include="docs\about\" />
+    <Folder Include="docs\assets\" />
+    <Folder Include="docs\assets\brand\" />
+    <Folder Include="docs\assets\css\" />
+    <Folder Include="docs\assets\img\" />
+    <Folder Include="docs\assets\js\" />
+    <Folder Include="docs\assets\js\src\" />
+    <Folder Include="docs\assets\js\vendor\" />
+    <Folder Include="docs\assets\scss\" />
+    <Folder Include="docs\components\" />
+    <Folder Include="docs\content\" />
+    <Folder Include="docs\dist\" />
+    <Folder Include="docs\dist\css\" />
+    <Folder Include="docs\dist\js\" />
+    <Folder Include="docs\examples\" />
+    <Folder Include="docs\examples\album\" />
+    <Folder Include="docs\examples\blog\" />
+    <Folder Include="docs\examples\carousel\" />
+    <Folder Include="docs\examples\cover\" />
+    <Folder Include="docs\examples\dashboard\" />
+    <Folder Include="docs\examples\grid\" />
+    <Folder Include="docs\examples\jumbotron\" />
+    <Folder Include="docs\examples\justified-nav\" />
+    <Folder Include="docs\examples\narrow-jumbotron\" />
+    <Folder Include="docs\examples\navbar-top-fixed\" />
+    <Folder Include="docs\examples\navbar-top\" />
+    <Folder Include="docs\examples\navbar\" />
+    <Folder Include="docs\examples\offcanvas\" />
+    <Folder Include="docs\examples\screenshots\" />
+    <Folder Include="docs\examples\signin\" />
+    <Folder Include="docs\examples\starter-template\" />
+    <Folder Include="docs\examples\sticky-footer-navbar\" />
+    <Folder Include="docs\examples\sticky-footer\" />
+    <Folder Include="docs\examples\tooltip-viewport\" />
+    <Folder Include="docs\extend\" />
+    <Folder Include="docs\getting-started\" />
+    <Folder Include="docs\layout\" />
+    <Folder Include="docs\_data\" />
+    <Folder Include="docs\_includes\" />
+    <Folder Include="docs\_layouts\" />
+    <Folder Include="docs\_plugins\" />
+    <Folder Include="fonts\" />
+    <Folder Include="grunt\" />
+    <Folder Include="grunt\bs-sass-compile\" />
+    <Folder Include="js\" />
+    <Folder Include="js\dist\" />
+    <Folder Include="js\src\" />
+    <Folder Include="js\tests\" />
+    <Folder Include="js\tests\unit\" />
+    <Folder Include="js\tests\vendor\" />
+    <Folder Include="js\tests\visual\" />
+    <Folder Include="images\" />
+    <Folder Include="Account\" />
+    <Folder Include="Account\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Admin\" />
+    <Folder Include="videos\" />
+    <Folder Include="nuget\" />
+    <Folder Include="obj\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scss\" />
+    <Folder Include="scss\mixins\" />
+    <Folder Include="scss\utilities\" />
+    <Folder Include="Service References\" />
+    <Folder Include="Service References\Application Insights\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\ApplicationInsights.config" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.xml" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.xml" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.Web.xml" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.xml" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\prjAgile.dll" />
+    <Content Include="bin\prjAgile.dll.config" />
+    <Content Include="bin\prjAgile.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="CreateAccount\changed-pwd.html" />
+    <Content Include="CreateAccount\reset-pwd-link-sent.html" />
+    <Content Include="CreateAccount\scripts\gen_validatorv31.js" />
+    <Content Include="CreateAccount\scripts\pwdwidget.js" />
+    <Content Include="CreateAccount\style\fg_membersite.css" />
+    <Content Include="CreateAccount\style\LoginStyle.css" />
+    <Content Include="CreateAccount\style\pwdwidget.css" />
+    <Content Include="CreateAccount\thank-you-regd.html" />
+    <Content Include="CreateAccount\thank-you.html" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\NPKStyleSheet.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.css.map" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\css\bootstrap.min.css.map" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="docs\.htmlhintrc" />
+    <Content Include="docs\about\brand.md" />
+    <Content Include="docs\about\history.md" />
+    <Content Include="docs\about\license.md" />
+    <Content Include="docs\about\team.md" />
+    <Content Include="docs\about\translations.md" />
+    <Content Include="docs\apple-touch-icon.png" />
+    <Content Include="docs\assets\brand\bootstrap-outline.svg" />
+    <Content Include="docs\assets\brand\bootstrap-punchout.svg" />
+    <Content Include="docs\assets\brand\bootstrap-solid.svg" />
+    <Content Include="docs\assets\css\docs-flexbox.min.css" />
+    <Content Include="docs\assets\css\docs-flexbox.min.css.map" />
+    <Content Include="docs\assets\css\docs.min.css" />
+    <Content Include="docs\assets\css\docs.min.css.map" />
+    <Content Include="docs\assets\img\bs-themes.png" />
+    <Content Include="docs\assets\img\components.png" />
+    <Content Include="docs\assets\img\devices.png" />
+    <Content Include="docs\assets\img\expo-lyft.jpg" />
+    <Content Include="docs\assets\img\expo-newsweek.jpg" />
+    <Content Include="docs\assets\img\expo-riot.jpg" />
+    <Content Include="docs\assets\img\expo-vogue.jpg" />
+    <Content Include="docs\assets\img\sass.png" />
+    <Content Include="docs\assets\js\docs.min.js" />
+    <Content Include="docs\assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="docs\assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="docs\assets\js\src\application.js" />
+    <Content Include="docs\assets\js\vendor\anchor.min.js" />
+    <Content Include="docs\assets\js\vendor\clipboard.min.js" />
+    <Content Include="docs\assets\js\vendor\holder.min.js" />
+    <Content Include="docs\assets\js\vendor\jekyll-search.min.js" />
+    <Content Include="docs\assets\js\vendor\jquery.min.js" />
+    <Content Include="docs\assets\js\vendor\tether.min.js" />
+    <Content Include="docs\assets\scss\docs.scss" />
+    <Content Include="docs\assets\scss\flex-grid.scss" />
+    <Content Include="docs\assets\scss\_ads.scss" />
+    <Content Include="docs\assets\scss\_anchor.scss" />
+    <Content Include="docs\assets\scss\_booticon.scss" />
+    <Content Include="docs\assets\scss\_brand.scss" />
+    <Content Include="docs\assets\scss\_browser-bugs.scss" />
+    <Content Include="docs\assets\scss\_buttons.scss" />
+    <Content Include="docs\assets\scss\_callouts.scss" />
+    <Content Include="docs\assets\scss\_clipboard-js.scss" />
+    <Content Include="docs\assets\scss\_component-examples.scss" />
+    <Content Include="docs\assets\scss\_content.scss" />
+    <Content Include="docs\assets\scss\_examples.scss" />
+    <Content Include="docs\assets\scss\_featured-sites.scss" />
+    <Content Include="docs\assets\scss\_featurettes.scss" />
+    <Content Include="docs\assets\scss\_footer.scss" />
+    <Content Include="docs\assets\scss\_masthead.scss" />
+    <Content Include="docs\assets\scss\_nav.scss" />
+    <Content Include="docs\assets\scss\_page-header.scss" />
+    <Content Include="docs\assets\scss\_responsive-tests.scss" />
+    <Content Include="docs\assets\scss\_sidebar.scss" />
+    <Content Include="docs\assets\scss\_skiplink.scss" />
+    <Content Include="docs\assets\scss\_syntax.scss" />
+    <Content Include="docs\assets\scss\_team.scss" />
+    <Content Include="docs\browser-bugs.md" />
+    <Content Include="docs\CNAME" />
+    <Content Include="docs\components\alerts.md" />
+    <Content Include="docs\components\breadcrumb.md" />
+    <Content Include="docs\components\button-group.md" />
+    <Content Include="docs\components\buttons.md" />
+    <Content Include="docs\components\card.md" />
+    <Content Include="docs\components\carousel.md" />
+    <Content Include="docs\components\collapse.md" />
+    <Content Include="docs\components\dropdowns.md" />
+    <Content Include="docs\components\forms.md" />
+    <Content Include="docs\components\input-group.md" />
+    <Content Include="docs\components\jumbotron.md" />
+    <Content Include="docs\components\list-group.md" />
+    <Content Include="docs\components\modal.md" />
+    <Content Include="docs\components\navbar.md" />
+    <Content Include="docs\components\navs.md" />
+    <Content Include="docs\components\pagination.md" />
+    <Content Include="docs\components\popovers.md" />
+    <Content Include="docs\components\progress.md" />
+    <Content Include="docs\components\scrollspy.md" />
+    <Content Include="docs\components\tag.md" />
+    <Content Include="docs\components\tooltips.md" />
+    <Content Include="docs\components\utilities.md" />
+    <Content Include="docs\content\code.md" />
+    <Content Include="docs\content\figures.md" />
+    <Content Include="docs\content\images.md" />
+    <Content Include="docs\content\reboot.md" />
+    <Content Include="docs\content\tables.md" />
+    <Content Include="docs\content\typography.md" />
+    <Content Include="docs\dist\css\bootstrap.css" />
+    <Content Include="docs\dist\css\bootstrap.css.map" />
+    <Content Include="docs\dist\css\bootstrap.min.css" />
+    <Content Include="docs\dist\css\bootstrap.min.css.map" />
+    <Content Include="docs\dist\js\bootstrap.js" />
+    <Content Include="docs\dist\js\bootstrap.min.js" />
+    <Content Include="docs\examples\album\album.css" />
+    <Content Include="docs\examples\album\index.html" />
+    <Content Include="docs\examples\blog\blog.css" />
+    <Content Include="docs\examples\blog\index.html" />
+    <Content Include="docs\examples\carousel\carousel.css" />
+    <Content Include="docs\examples\carousel\index.html" />
+    <Content Include="docs\examples\cover\cover.css" />
+    <Content Include="docs\examples\cover\index.html" />
+    <Content Include="docs\examples\dashboard\dashboard.css" />
+    <Content Include="docs\examples\dashboard\index.html" />
+    <Content Include="docs\examples\grid\grid.css" />
+    <Content Include="docs\examples\grid\index.html" />
+    <Content Include="docs\examples\index.md" />
+    <Content Include="docs\examples\jumbotron\index.html" />
+    <Content Include="docs\examples\jumbotron\jumbotron.css" />
+    <Content Include="docs\examples\justified-nav\index.html" />
+    <Content Include="docs\examples\justified-nav\justified-nav.css" />
+    <Content Include="docs\examples\narrow-jumbotron\index.html" />
+    <Content Include="docs\examples\narrow-jumbotron\narrow-jumbotron.css" />
+    <Content Include="docs\examples\navbar-top-fixed\index.html" />
+    <Content Include="docs\examples\navbar-top-fixed\navbar-top-fixed.css" />
+    <Content Include="docs\examples\navbar-top\index.html" />
+    <Content Include="docs\examples\navbar-top\navbar-top.css" />
+    <Content Include="docs\examples\navbar\index.html" />
+    <Content Include="docs\examples\navbar\navbar.css" />
+    <Content Include="docs\examples\offcanvas\index.html" />
+    <Content Include="docs\examples\offcanvas\offcanvas.css" />
+    <Content Include="docs\examples\offcanvas\offcanvas.js" />
+    <Content Include="docs\examples\screenshots\album.jpg" />
+    <Content Include="docs\examples\screenshots\blog.jpg" />
+    <Content Include="docs\examples\screenshots\carousel.jpg" />
+    <Content Include="docs\examples\screenshots\cover.jpg" />
+    <Content Include="docs\examples\screenshots\dashboard.jpg" />
+    <Content Include="docs\examples\screenshots\equal-height-columns.jpg" />
+    <Content Include="docs\examples\screenshots\grid.jpg" />
+    <Content Include="docs\examples\screenshots\jumbotron-narrow.jpg" />
+    <Content Include="docs\examples\screenshots\jumbotron.jpg" />
+    <Content Include="docs\examples\screenshots\justified-nav.jpg" />
+    <Content Include="docs\examples\screenshots\navbar-fixed.jpg" />
+    <Content Include="docs\examples\screenshots\navbar-static.jpg" />
+    <Content Include="docs\examples\screenshots\navbar.jpg" />
+    <Content Include="docs\examples\screenshots\non-responsive.jpg" />
+    <Content Include="docs\examples\screenshots\offcanvas.jpg" />
+    <Content Include="docs\examples\screenshots\sign-in.jpg" />
+    <Content Include="docs\examples\screenshots\starter-template.jpg" />
+    <Content Include="docs\examples\screenshots\sticky-footer-navbar.jpg" />
+    <Content Include="docs\examples\screenshots\sticky-footer.jpg" />
+    <Content Include="docs\examples\screenshots\theme.jpg" />
+    <Content Include="docs\examples\signin\index.html" />
+    <Content Include="docs\examples\signin\signin.css" />
+    <Content Include="docs\examples\starter-template\index.html" />
+    <Content Include="docs\examples\starter-template\starter-template.css" />
+    <Content Include="docs\examples\sticky-footer-navbar\index.html" />
+    <Content Include="docs\examples\sticky-footer-navbar\sticky-footer-navbar.css" />
+    <Content Include="docs\examples\sticky-footer\index.html" />
+    <Content Include="docs\examples\sticky-footer\sticky-footer.css" />
+    <Content Include="docs\examples\tooltip-viewport\index.html" />
+    <Content Include="docs\examples\tooltip-viewport\tooltip-viewport.css" />
+    <Content Include="docs\examples\tooltip-viewport\tooltip-viewport.js" />
+    <Content Include="docs\extend\approach.md" />
+    <Content Include="docs\extend\icon-fonts.md" />
+    <Content Include="docs\extend\index.md" />
+    <Content Include="docs\favicon.ico" />
+    <Content Include="docs\getting-started\accessibility.md" />
+    <Content Include="docs\getting-started\best-practices.md" />
+    <Content Include="docs\getting-started\browsers-devices.md" />
+    <Content Include="docs\getting-started\build-tools.md" />
+    <Content Include="docs\getting-started\contents.md" />
+    <Content Include="docs\getting-started\download.md" />
+    <Content Include="docs\getting-started\flexbox.md" />
+    <Content Include="docs\getting-started\introduction.md" />
+    <Content Include="docs\getting-started\javascript.md" />
+    <Content Include="docs\getting-started\options.md" />
+    <Content Include="docs\index.html" />
+    <Content Include="docs\layout\flexbox-grid.md" />
+    <Content Include="docs\layout\grid.md" />
+    <Content Include="docs\layout\media-object.md" />
+    <Content Include="docs\layout\overview.md" />
+    <Content Include="docs\layout\responsive-utilities.md" />
+    <Content Include="docs\LICENSE" />
+    <Content Include="docs\migration.md" />
+    <Content Include="docs\robots.txt" />
+    <Content Include="docs\search.json" />
+    <Content Include="docs\_data\browser-bugs.yml" />
+    <Content Include="docs\_data\browser-features.yml" />
+    <Content Include="docs\_data\core-team.yml" />
+    <Content Include="docs\_data\nav.yml" />
+    <Content Include="docs\_data\showcase.yml" />
+    <Content Include="docs\_data\translations.yml" />
+    <Content Include="docs\_includes\ads.html" />
+    <Content Include="docs\_includes\callout-warning-color-assistive-technologies.md" />
+    <Content Include="docs\_includes\footer.html" />
+    <Content Include="docs\_includes\header.html" />
+    <Content Include="docs\_includes\nav-docs.html" />
+    <Content Include="docs\_includes\nav-home.html" />
+    <Content Include="docs\_includes\page-headers.html" />
+    <Content Include="docs\_layouts\default.html" />
+    <Content Include="docs\_layouts\docs.html" />
+    <Content Include="docs\_layouts\home.html" />
+    <Content Include="docs\_layouts\simple.html" />
+    <Content Include="docs\_plugins\bridge.rb" />
+    <Content Include="docs\_plugins\bugify.rb" />
+    <Content Include="docs\_plugins\callout.rb" />
+    <Content Include="docs\_plugins\highlight_alt.rb" />
+    <Content Include="docs\_plugins\markdown-block.rb" />
+    <Content Include="doom.php" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="grunt\bs-sass-compile\libsass.js" />
+    <Content Include="grunt\bs-sass-compile\sass.js" />
+    <Content Include="grunt\change-version.js" />
+    <Content Include="grunt\configBridge.json" />
+    <Content Include="grunt\gcp-key.json.enc" />
+    <Content Include="grunt\npm-shrinkwrap.json" />
+    <Content Include="grunt\postcss.js" />
+    <Content Include="grunt\sauce_browsers.yml" />
+    <Content Include="grunt\upload-preview.sh" />
+    <Content Include="images\BF1.png" />
+    <Content Include="images\CivVI.png" />
+    <Content Include="images\CODR.png" />
+    <Content Include="images\doomHeader.jpg" />
+    <Content Include="images\doomThumbnail.jpg" />
+    <Content Include="images\DoomThumbnailSmall.jpg" />
+    <Content Include="images\Fifa17.png" />
+    <Content Include="images\gears4.jpg" />
+    <Content Include="images\Gears4.png" />
+    <Content Include="images\Logo.png" />
+    <Content Include="images\Logomini.png" />
+    <Content Include="images\LogoSmall.png" />
+    <Content Include="images\NBA2K17.png" />
+    <Content Include="images\OverWatch.png" />
+    <Content Include="images\RocketLeague.png" />
+    <Content Include="images\RocketLeagueHeader.jpg" />
+    <Content Include="images\Skyrim.png" />
+    <Content Include="images\TitanFall2.png" />
+    <Content Include="js\.eslintrc.json" />
+    <Content Include="js\.jscsrc" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\dist\alert.js" />
+    <Content Include="js\dist\alert.js.map" />
+    <Content Include="js\dist\button.js" />
+    <Content Include="js\dist\button.js.map" />
+    <Content Include="js\dist\carousel.js" />
+    <Content Include="js\dist\carousel.js.map" />
+    <Content Include="js\dist\collapse.js" />
+    <Content Include="js\dist\collapse.js.map" />
+    <Content Include="js\dist\dropdown.js" />
+    <Content Include="js\dist\dropdown.js.map" />
+    <Content Include="js\dist\modal.js" />
+    <Content Include="js\dist\modal.js.map" />
+    <Content Include="js\dist\popover.js" />
+    <Content Include="js\dist\popover.js.map" />
+    <Content Include="js\dist\scrollspy.js" />
+    <Content Include="js\dist\scrollspy.js.map" />
+    <Content Include="js\dist\tab.js" />
+    <Content Include="js\dist\tab.js.map" />
+    <Content Include="js\dist\tooltip.js" />
+    <Content Include="js\dist\tooltip.js.map" />
+    <Content Include="js\dist\util.js" />
+    <Content Include="js\dist\util.js.map" />
+    <Content Include="js\NPKJavaScript.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\src\alert.js" />
+    <Content Include="js\src\button.js" />
+    <Content Include="js\src\carousel.js" />
+    <Content Include="js\src\collapse.js" />
+    <Content Include="js\src\dropdown.js" />
+    <Content Include="js\src\modal.js" />
+    <Content Include="js\src\popover.js" />
+    <Content Include="js\src\scrollspy.js" />
+    <Content Include="js\src\tab.js" />
+    <Content Include="js\src\tooltip.js" />
+    <Content Include="js\src\util.js" />
+    <Content Include="js\tests\index.html" />
+    <Content Include="js\tests\README.md" />
+    <Content Include="js\tests\unit\alert.js" />
+    <Content Include="js\tests\unit\button.js" />
+    <Content Include="js\tests\unit\carousel.js" />
+    <Content Include="js\tests\unit\collapse.js" />
+    <Content Include="js\tests\unit\dropdown.js" />
+    <Content Include="js\tests\unit\modal.js" />
+    <Content Include="js\tests\unit\phantom.js" />
+    <Content Include="js\tests\unit\popover.js" />
+    <Content Include="js\tests\unit\scrollspy.js" />
+    <Content Include="js\tests\unit\tab.js" />
+    <Content Include="js\tests\unit\tooltip.js" />
+    <Content Include="js\tests\vendor\jquery.min.js" />
+    <Content Include="js\tests\vendor\qunit.css" />
+    <Content Include="js\tests\vendor\qunit.js" />
+    <Content Include="js\tests\vendor\tether.min.js" />
+    <Content Include="js\tests\visual\alert.html" />
+    <Content Include="js\tests\visual\button.html" />
+    <Content Include="js\tests\visual\carousel.html" />
+    <Content Include="js\tests\visual\collapse.html" />
+    <Content Include="js\tests\visual\dropdown.html" />
+    <Content Include="js\tests\visual\modal.html" />
+    <Content Include="js\tests\visual\popover.html" />
+    <Content Include="js\tests\visual\scrollspy.html" />
+    <Content Include="js\tests\visual\tab.html" />
+    <Content Include="js\tests\visual\tooltip.html" />
+    <Content Include="nuget\bootstrap.nuspec" />
+    <Content Include="nuget\bootstrap.sass.nuspec" />
+    <Content Include="nuget\MyGet.ps1" />
+    <Content Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\PublishProfiles\TeamNameTeam4 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\TeamNameTeam4 - FTP.pubxml" />
+    <Content Include="scripts\ai.0.22.19-build00125.js" />
+    <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="scss\.scss-lint.yml" />
+    <Content Include="scss\bootstrap-flex.scss" />
+    <Content Include="scss\bootstrap-grid.scss" />
+    <Content Include="scss\bootstrap-reboot.scss" />
+    <Content Include="scss\bootstrap.scss" />
+    <Content Include="scss\mixins\_alert.scss" />
+    <Content Include="scss\mixins\_background-variant.scss" />
+    <Content Include="scss\mixins\_border-radius.scss" />
+    <Content Include="scss\mixins\_breakpoints.scss" />
+    <Content Include="scss\mixins\_buttons.scss" />
+    <Content Include="scss\mixins\_cards.scss" />
+    <Content Include="scss\mixins\_clearfix.scss" />
+    <Content Include="scss\mixins\_forms.scss" />
+    <Content Include="scss\mixins\_gradients.scss" />
+    <Content Include="scss\mixins\_grid-framework.scss" />
+    <Content Include="scss\mixins\_grid.scss" />
+    <Content Include="scss\mixins\_hover.scss" />
+    <Content Include="scss\mixins\_image.scss" />
+    <Content Include="scss\mixins\_list-group.scss" />
+    <Content Include="scss\mixins\_lists.scss" />
+    <Content Include="scss\mixins\_nav-divider.scss" />
+    <Content Include="scss\mixins\_navbar-align.scss" />
+    <Content Include="scss\mixins\_pagination.scss" />
+    <Content Include="scss\mixins\_progress.scss" />
+    <Content Include="scss\mixins\_pulls.scss" />
+    <Content Include="scss\mixins\_reset-filter.scss" />
+    <Content Include="scss\mixins\_reset-text.scss" />
+    <Content Include="scss\mixins\_resize.scss" />
+    <Content Include="scss\mixins\_screen-reader.scss" />
+    <Content Include="scss\mixins\_size.scss" />
+    <Content Include="scss\mixins\_tab-focus.scss" />
+    <Content Include="scss\mixins\_table-row.scss" />
+    <Content Include="scss\mixins\_tag.scss" />
+    <Content Include="scss\mixins\_text-emphasis.scss" />
+    <Content Include="scss\mixins\_text-hide.scss" />
+    <Content Include="scss\mixins\_text-truncate.scss" />
+    <Content Include="scss\utilities\_background.scss" />
+    <Content Include="scss\utilities\_clearfix.scss" />
+    <Content Include="scss\utilities\_display.scss" />
+    <Content Include="scss\utilities\_flex.scss" />
+    <Content Include="scss\utilities\_pulls.scss" />
+    <Content Include="scss\utilities\_screenreaders.scss" />
+    <Content Include="scss\utilities\_spacing.scss" />
+    <Content Include="scss\utilities\_text.scss" />
+    <Content Include="scss\utilities\_visibility.scss" />
+    <Content Include="scss\_alert.scss" />
+    <Content Include="scss\_animation.scss" />
+    <Content Include="scss\_breadcrumb.scss" />
+    <Content Include="scss\_button-group.scss" />
+    <Content Include="scss\_buttons.scss" />
+    <Content Include="scss\_card.scss" />
+    <Content Include="scss\_carousel.scss" />
+    <Content Include="scss\_close.scss" />
+    <Content Include="scss\_code.scss" />
+    <Content Include="scss\_custom-forms.scss" />
+    <Content Include="scss\_custom.scss" />
+    <Content Include="scss\_dropdown.scss" />
+    <Content Include="scss\_forms.scss" />
+    <Content Include="scss\_grid.scss" />
+    <Content Include="scss\_images.scss" />
+    <Content Include="scss\_input-group.scss" />
+    <Content Include="scss\_jumbotron.scss" />
+    <Content Include="scss\_list-group.scss" />
+    <Content Include="scss\_media.scss" />
+    <Content Include="scss\_mixins.scss" />
+    <Content Include="scss\_modal.scss" />
+    <Content Include="scss\_nav.scss" />
+    <Content Include="scss\_navbar.scss" />
+    <Content Include="scss\_normalize.scss" />
+    <Content Include="scss\_pagination.scss" />
+    <Content Include="scss\_popover.scss" />
+    <Content Include="scss\_print.scss" />
+    <Content Include="scss\_progress.scss" />
+    <Content Include="scss\_reboot.scss" />
+    <Content Include="scss\_responsive-embed.scss" />
+    <Content Include="scss\_tables.scss" />
+    <Content Include="scss\_tags.scss" />
+    <Content Include="scss\_tooltip.scss" />
+    <Content Include="scss\_type.scss" />
+    <Content Include="scss\_utilities.scss" />
+    <Content Include="scss\_variables.scss" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="videos\Gears of War 4 - Launch Trailer.mp4" />
+    <Content Include="Web.config" />
+    <None Include="Properties\PublishProfiles\TeamNameTeam4.pubxml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\DEVSENSE\PHP Tools\VS$(VisualStudioVersion)\Devsense.PHP.MsWebApplication.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
